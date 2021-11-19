@@ -1,0 +1,235 @@
+body {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    height: 2000px;
+  }
+  
+  /* css for mobile nav bar */
+  
+  .burger-menu-icon {
+  width: 50px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: 5px;
+  color: red!important;
+  }
+  
+  #nav-header {
+    background-color: rgba(10,10,10,0.9); 
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  ul.dropdown-content {
+    overflow: hidden; 
+    max-height: 0px; 
+    background: rgba(10,10,10,0.9);
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1); 
+    color: rgba(255,255,255,0.7); 
+    list-style: none;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .dropdown-content > li {
+  height: 40px;
+  line-height: 35px;
+  border-top: 1px solid rgba(73,71,71,0.45);
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 11px;
+  }
+  
+  
+  ul.on {
+  max-height: 600px;
+  /*  opacity: .9; */
+  transition: max-height 1s;
+  }
+  
+  #mobile-nav{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+  } 
+  
+  .charles {
+    padding-left: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  @media only screen and (min-width: 750px) {
+   #mobile-nav {
+       display: none;
+   }
+  }
+  
+  
+  /* Css for desktop nav bar */
+  
+  #name-area {
+   width: 40%; 
+   line-height: 80px;
+  }
+  
+  #desktop-nav {
+    display: flex;
+    background-color: transparent;  
+    height: 80px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    #desktop-nav {
+        display: none;
+    }
+   }
+  
+   #menu-area {
+    width: 60%; 
+   } 
+  
+   #menu-content {
+       display: flex;
+       color: white;
+       list-style: none;
+   }
+  
+  
+   #menu-content > li {
+    height: 40px;
+    line-height: 50px; 
+    width: 100px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 11px;
+    }
+    
+    #header-image-container {
+     height: 1000px;
+     width: 100%;
+     background-color: aqua; 
+     background: url("images/Headerimage.jpg");  
+     background-repeat: no-repeat;
+     background-size: cover;
+     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 70%);
+     text-align: center;
+    }
+  
+    #header-content {
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+    }
+  
+  
+    #header-content  h2 {
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      color: white;
+      
+    }
+  
+  
+    @media only screen and (max-width: 750px) {
+        #desktop-nav {
+            display: none;
+        }
+       
+  }
+  
+  /* homepage content */
+  
+  .exposure {
+  opacity: 0;
+  transition: opacity 2s; 
+  }
+  
+  .sales {
+  opacity: 0;
+  transition: opacity 2s; 
+  }
+  
+  .brand {
+  opacity: 0;
+  transition: opacity 2s; 
+  }
+  
+  .on {
+  opacity: 1!important;
+  transition: opacity  2s; 
+  }
+  
+  #fading-texts {
+   margin: 0 auto;
+   height: 80px;
+  }
+  
+  #fading-texts > h1 {
+   color: white;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   padding-top: 110px;
+   font-size: 30px;
+   margin-block-start: 0em;
+   margin-block-end: 0em;
+  } 
+  
+  #services-container {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: center;
+   padding-top: 150px;
+   padding-bottom: 150px;
+  }
+  
+  #services-container > div {
+  /*   background-color: blue; */
+  margin: 40px;
+  width: 250px;
+  text-align: center;
+  }
+  
+  .iconify {
+   font-size: 45px;
+  }
+  
+  .service h3 {
+  font-size: 13px;
+  }
+  
+  .service p {
+  font-size: 11px;
+  }
+  
+  @media only screen and (min-width: 1320px) {
+    #services-container > div {
+      width: 300px;
+      background-color: blue;
+    }
+  }
+
+  #see-more-work {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+  }
