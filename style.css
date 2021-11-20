@@ -1,6 +1,5 @@
 
 body {
-  text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
   font-size: 11px;
@@ -8,6 +7,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   width: 100vw;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* css for mobile nav bar */
@@ -48,7 +48,7 @@ border-top: 1px solid rgba(73,71,71,0.45);
 width: 100%;
 text-align: left;
 padding-left: 20px;
-font-size: 11px;
+font-size: 12px;
 cursor: pointer;
 }
 
@@ -70,7 +70,7 @@ transition: max-height 1s;
   padding-left: 20px;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   color: #fff;
   margin: 0;
 }
@@ -130,7 +130,7 @@ transition: max-height 1s;
   width: 100px;
   text-align: center;
   padding-left: 20px;
-  font-size: 11px;
+  font-size: 14px;
   cursor: pointer;
   }
   
@@ -156,7 +156,7 @@ transition: max-height 1s;
     margin-block-start: 0em;
     margin-block-end: 0em;
     color: white;
-    
+    font-size: 25px;
   }
 
 
@@ -197,7 +197,7 @@ transition: opacity  2s;
  bottom: 0;
  margin: auto;
  padding-top: 110px;
- font-size: 30px;
+ font-size: 35px;
  margin-block-start: 0em;
  margin-block-end: 0em;
 } 
@@ -214,6 +214,12 @@ transition: opacity  2s;
   font-size: 20px;
 
 }
+
+#header-content > h2 {
+  font-size: 20px;
+
+}
+
 }
 
 /* service section css */
@@ -378,7 +384,7 @@ h4.accordion-btn.isOpen:after {
 
 .accordion-wrap > p{
   color: #666;
-  font-size: 16px;
+  font-size: 11px;
 }
 
 .expertise-wrap > p{
@@ -496,7 +502,7 @@ h4.accordion-btn.isOpen:after {
 }
 
 #request-call-back p{
-font-size: 10px;
+font-size: 11px;
 line-height: 1.5;
 }
 .input-container {
@@ -511,6 +517,10 @@ line-height: 1.5;
 }
 
 #name-phone-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .submit {
@@ -532,6 +542,12 @@ line-height: 1.5;
    padding-bottom: 12px;
  }
 
+ .submit-container > input{
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+
+
  #subject-submit-mobile {
   display: none;
 }
@@ -544,7 +560,7 @@ line-height: 1.5;
    }
 
    .submit {
-    width: 400px!important;
+    width: 435px!important;
   }
    
   #request-call-text-area {
@@ -621,7 +637,7 @@ line-height: 1.5;
   width: 100%;
   background-color: black; 
   color: white;
-  font-size: 8px;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -648,6 +664,12 @@ line-height: 1.5;
 }
 
 /* contact page css */
+
+
+
+input {
+color: gray;
+}
 
 .contact-page-container {
   min-height: 100vh;
@@ -680,6 +702,7 @@ line-height: 1.5;
   outline: 0;
   outline-color: transparent;
   outline-style: none;
+  padding-left: 10px;
 } 
 
 .name-input-container > input{
@@ -690,6 +713,7 @@ line-height: 1.5;
   width: 750px;
   height: 40px;
   margin-bottom: 10px;
+  padding-left: 10px;
 }
 
  .email-input-container > input{
@@ -700,6 +724,7 @@ line-height: 1.5;
   width: 750px;
   height: 40px;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
  
 
@@ -711,6 +736,7 @@ line-height: 1.5;
   width: 750px;
   height: 80px;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
  
 
@@ -739,7 +765,7 @@ line-height: 1.5;
 .meet-text-area p{
   width: 200px;
   line-height: 2;
-  font-size: 10px;
+  font-size: 11px;
   text-align: start;
 }
 
@@ -751,7 +777,7 @@ line-height: 1.5;
 .hello-text-area p{
   width: 200px;
   line-height: 2;
-  font-size: 10px;
+  font-size: 11px;
   text-align: start;
 }
 
@@ -834,7 +860,8 @@ line-height: 1.5;
     margin-bottom: 20px;
     width: 80%;
     height: 30px;
-    color: white;
+    color: rgba(17,17,17,0.8);
+    padding-left: 10px;
   }
 
 
@@ -910,17 +937,13 @@ line-height: 1.5;
 
 }
 
-
-
-
 #about-us-text {
   width: 50%;
   padding-top: 100px;
   padding-bottom: 100px;
   color: #666;
-  font-size: 10px;
+  font-size: 11px;
   padding: 5% 40px;
-  font-family: "Volkhov";
   line-height: 2;
   margin-right: 5px;
 }
@@ -962,7 +985,7 @@ margin-left: 15px;
 
 .description-text-container {
   line-height: 2;
-  font-size: 9px;
+  font-size: 11px;
   color: #666;
   display: flex;
   flex-direction: column;
@@ -1015,7 +1038,7 @@ margin-left: 15px;
 
   .description-text-container {
     line-height: 2;
-    font-size: 9px;
+    font-size: 11px;
     color: #666;
     width: 100%;
   }
