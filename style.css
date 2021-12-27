@@ -87,8 +87,8 @@ transition: max-height 1s;
 /* Css for desktop nav bar */
 
 .name-area {
- width: 40%; 
  line-height: 80px;
+ position: absolute;
 }
 
 .desktop-nav {
@@ -114,13 +114,15 @@ transition: max-height 1s;
  }
 
  .menu-area {
-  width: 60%; 
+  width: 100%; 
  } 
 
  .menu-content {
      display: flex;
      color: white;
      list-style: none;
+     padding-inline-start: 00px;
+     justify-content: center;
  }
 
 
@@ -641,6 +643,8 @@ line-height: 1.5;
   text-align: center;
 }
 
+
+
 .rights {
   display: flex;
   justify-content: center;
@@ -957,11 +961,11 @@ color: gray;
 }
 
 .project-image {
-  width: 50%;
+  width: 40%;
 }
 
 .project-description {
-  width: 50%;
+  width: 40%;
 }
 
 
@@ -1064,4 +1068,8 @@ a {
   width: 100px;
   text-align: left;
   font-size: 11px;
+}
+
+svg {
+  cursor: pointer;
 }
